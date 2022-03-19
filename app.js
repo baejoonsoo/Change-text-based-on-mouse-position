@@ -5,7 +5,7 @@ const frame = document.querySelector(".frame");
 
 console.log("js");
 
-let onMouseMove = ({ clientX, screenX }) => {
+let onMouseMove = ({ clientX }) => {
   frame.style.width = innerWidth / 2 - 15 + "px";
   frame.style.height = innerHeight - 30 + "px";
 
