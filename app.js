@@ -4,6 +4,7 @@ const secondText = document.querySelector(".second_name .text_name");
 const frame = document.querySelector(".frame");
 
 let onMouseMove = ({ clientX }) => {
+  // 화면전체 크기에서 border 크기만큼 줄인 값을 적용한다
   frame.style.width = innerWidth / 2 - 15 + "px";
   frame.style.height = innerHeight - 30 + "px";
 
