@@ -10,7 +10,7 @@ let onMouseMove = ({ clientX }) => {
   const x = clientX - innerWidth / 2;
 
   const firstText = ".first_name .text_name";
-  const secondText = ".second_name .text_names";
+  const secondText = ".second_name .text_name";
 
   TweenLite.to(`${firstText}, ${secondText}`, 1, {
     x: x,
