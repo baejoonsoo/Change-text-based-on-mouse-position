@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: none;
+  /* cursor: none; */
 }
 
 .first_name,

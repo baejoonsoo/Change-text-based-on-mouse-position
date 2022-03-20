@@ -3,15 +3,16 @@ const firstText = document.querySelector(".first_name .text_name");
 const secondText = document.querySelector(".second_name .text_name");
 const frame = document.querySelector(".frame");
 
-console.log("js");
-
 let onMouseMove = ({ clientX }) => {
   frame.style.width = innerWidth / 2 - 15 + "px";
   frame.style.height = innerHeight - 30 + "px";
 
-  let x = ((clientX / innerWidth) * 2 - 1) * (innerWidth / 4);
+  const x = clientX - innerWidth / 2;
 
-  TweenLite.to(".first_name .text_name, .second_name .text_name", 1, {
+  const firstText = ".first_name .text_name";
+  const secondText = ".second_name .text_names";
+
+  TweenLite.to(`${firstText}, ${secondText}`, 1, {
     x: x,
     ease: Sine.easeOut,
   });
